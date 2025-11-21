@@ -1,0 +1,73 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.about {
+  background: #090909fe;
+  padding-top: 120px;
+  &__subtitle {
+    position: relative;
+    padding-left: 12px;
+    margin-top: 10px;
+    @include before_circle;
+    z-index: 1;
+  }
+  &__title {
+    margin-top: 6px;
+    line-height: 167%;
+  }
+  &__devider {
+    background: $main-color;
+    width: 60px;
+    height: 3px;
+  }
+  &__text {
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  &__photo {
+    width: 400px;
+    img {
+      width: 100%;
+    }
+  }
+  &__desc {
+    width: 570px;
+  }
+  &__wrapper {
+    display: flex;
+    column-gap: 70px;
+  }
+  &__skills {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+  &__items {
+    width: 260px;
+    display: flex;
+    column-gap: 20px;
+  }
+  &__lorem {
+    margin-top: 6px;
+  }
+  &__img {
+    position: relative;
+    filter: invert(1);
+    width: 40px;
+    @include before_circle;
+    &::before {
+      top: -7%;
+      left: -2%;
+      background: #005afe;
+    }
+    img {
+      padding-left: 15px;
+      transform: translateY(10px);
+    }
+  }
+  &__titels {
+    width: 200px;
+  }
+}
