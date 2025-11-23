@@ -10,3 +10,10 @@ burgerBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   menu.classList.remove("active");
 });
+
+const percents = document.querySelectorAll(".skills__level-percent"),
+  lines = document.querySelectorAll(".skills__level-body span");
+
+percents.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
