@@ -4,21 +4,6 @@
 .exp {
   background: $dark-color;
   padding-top: 120px;
-  &__subtitle {
-    position: relative;
-    text-align: center;
-    @include before_circle;
-    &::before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    z-index: 1;
-  }
-  &__title {
-    margin-top: 6px;
-    text-align: center;
-    line-height: 167%;
-  }
   &__devider {
     margin: 22px auto 0 auto;
   }

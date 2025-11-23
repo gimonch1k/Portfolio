@@ -1,3 +1,5 @@
+@use "/src/sass/base/mixins.scss" as *;
+
 .title {
   font-weight: 700;
   color: #fff;
@@ -21,5 +23,20 @@
   &_fz48 {
     font-size: 48px;
     line-height: 125%;
+  }
+  &__section-title {
+    margin-top: 6px;
+    text-align: center;
+    line-height: 167%;
+  }
+  &__section-subtitle {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    z-index: 1;
   }
 }

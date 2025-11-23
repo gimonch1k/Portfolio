@@ -4,21 +4,6 @@
 .skills {
   background: $dark-color;
   padding-top: 126px;
-  &__subtitle {
-    text-align: center;
-    position: relative;
-    @include before_circle;
-    &::before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    z-index: 1;
-  }
-  &__title {
-    margin-top: 6px;
-    text-align: center;
-    line-height: 167%;
-  }
   &__devider {
     margin: 22px auto 0 auto;
   }
